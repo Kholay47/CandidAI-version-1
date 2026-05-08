@@ -5,7 +5,7 @@ export const processResumes = async (files, jd, skills) => {
   formData.append("jd", jd);
   formData.append("jd_skills", skills);
 
-  const res = await fetch("https://candidai-version-1.onrender.com/process_resume/", {
+  const res = await fetch("https://candidai-version-1-1.onrender.com/process_resume/", {
     method: "POST",
     body: formData,
   });
